@@ -21,7 +21,7 @@ class App extends Component {
   incrementCartItemQuantity = id => {
     this.setState(prevState => ({
       cartList: prevState.cartList.map(eachCartItem => {
-        if (id === eachCartItem.id) {
+        if (id === eachCartItem.isbn13) {
           const updatedQuantity = eachCartItem.itemsCount + 1
           return {...eachCartItem, itemsCount: updatedQuantity}
         }
@@ -32,11 +32,11 @@ class App extends Component {
 
   decrementCartItemQuantity = id => {
     const {cartList} = this.state
-    const productObject = cartList.find(eachCartItem => eachCartItem.id === id)
+    const productObject = cartList.find(eachCartItem => eachCartItem.isbn13 === id)
     if (productObject.itemsCount > 1) {
       this.setState(prevState => ({
         cartList: prevState.cartList.map(eachCartItem => {
-          if (id === eachCartItem.id) {
+          if (id === eachCartItem.isbn13) {
             const updatedQuantity = eachCartItem.itemsCount - 1
             return {...eachCartItem, itemsCount: updatedQuantity}
           }
@@ -51,7 +51,7 @@ class App extends Component {
   removeCartItem = id => {
     const {cartList} = this.state
     const updatedCartList = cartList.filter(
-      eachCartItem => eachCartItem.id !== id,
+      eachCartItem => eachCartItem.isbn13 !== id,
     )
 
     this.setState({cartList: updatedCartList})
@@ -60,13 +60,13 @@ class App extends Component {
   addCartItem = product => {
     const {cartList} = this.state
     const productObject = cartList.find(
-      eachCartItem => eachCartItem.id === product.id,
+      eachCartItem => eachCartItem.isbn13 === product.isbn13,
     )
 
     if (productObject) {
       this.setState(prevState => ({
         cartList: prevState.cartList.map(eachCartItem => {
-          if (productObject.id === eachCartItem.id) {
+          if (productObject.isbn13 === eachCartItem.isbn13) {
             const updatedQuantity = eachCartItem.itemsCount + product.itemsCount
 
             return {...eachCartItem, itemsCount: updatedQuantity}
