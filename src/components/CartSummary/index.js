@@ -7,6 +7,10 @@ const CartSummary = () => (
       const {cartList} = value
       let total = 0
       cartList.forEach(eachCartItem => {
+        let {price}=eachCartItem
+        let newPrice=price.replace('$','');
+        price=parseInt(newPrice)
+        console.log(price)
         total += eachCartItem.price * eachCartItem.itemsCount
       })
 
