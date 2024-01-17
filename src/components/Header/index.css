@@ -1,0 +1,45 @@
+.header-container{
+    background-color: #ffe619;
+    height: auto;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo-container{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.book-store-icon-word{
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    color: black;
+}
+
+.header-title{
+    color: black;
+    font-family: 'Montserrat';
+}
+
+.icons-container{
+    display: flex;
+    flex-shrink: 0;
+}
+
+.header-right-icons{
+    margin-right: 10px;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    outline: none;
+    color: black;
+}
+
+.link-text{
+    text-decoration: none;
+}
+

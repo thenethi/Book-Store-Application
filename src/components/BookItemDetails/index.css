@@ -1,0 +1,114 @@
+*{
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+
+.book-item-details-main-container{
+    width: 100vw;
+}
+
+.book-items-details-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.book-item-details-content-container{
+    width: 100vw;
+}
+
+.book-items-image{
+    width: 350px;
+    height: 450px;
+    flex-shrink: 0;
+}
+
+.book-item-details-title{
+    font-size: 39px;
+    margin: 10px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.book-item-details-subtitle{
+    margin: 10px;
+    color: gray;
+    flex-shrink: 0;
+}
+
+.book-item-details-about-book-heading{
+    margin: 10px;
+    flex-shrink: 0;
+}
+
+.book-item-details-description{
+    color: grey;
+    margin: 10px;
+    flex-shrink: 0;
+}
+
+.rating-container{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.book-item-details-price{
+    font-size: 24px;
+    margin: 10px;
+    flex-shrink: 0;
+    font-weight: 900;
+}
+
+.star-icon{
+    color: gold;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+.minus-plus-btn{
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    margin: 10px;
+}
+
+.items-container{
+    display: flex;
+}
+
+.buttons{
+    color: black;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.buttons:hover{
+    background-color: black;
+    color: white;
+}
+
+.item-count{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media screen and (max-width:768px){
+    .book-items-details-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

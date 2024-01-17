@@ -1,0 +1,48 @@
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    color: gray;
+    margin-top: 10px;
+    font-size: 12px;
+    align-self: flex-start;
+}
+
+input{
+    margin-bottom: 10px;
+    border: 2px solid gray;
+    padding: 10px;
+    width: 250px;
+}
+
+.sign-up-btn{
+    border: 2px solid black;
+    width: 250px;
+    font-family: Georgia, serif;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.sign-up-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.spanned-heading{
+    font-weight: 800;
+    font-size: 56px;
+    font-family: cursive;
+}

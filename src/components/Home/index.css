@@ -1,0 +1,12 @@
+.explore-more-button{
+    border: 0px solid;
+    color: blue;
+    text-decoration: underline;
+    background-color: transparent;
+    margin: 10px;
+}
+
+.button-container{
+    text-align: end;
+    margin: 20px;
+}
