@@ -1,4 +1,4 @@
-import { Link,withRouter } from "react-router-dom/cjs/react-router-dom.min";
+import { Link,withRouter } from "react-router-dom";
 import { TbLetterB } from "react-icons/tb";
 import { FaUser,FaShoppingCart} from "react-icons/fa";
 import './index.css'
