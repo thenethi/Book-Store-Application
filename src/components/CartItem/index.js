@@ -24,7 +24,10 @@ const CartItem = props => (
       const onRemoveCartItem = () => {
         removeCartItem(isbn13)
       }
-      const totalPrice = price * itemsCount
+    let newPrice=price.replace('$','');
+    let updatedPrice=parseInt(newPrice)
+    console.log(updatedPrice)
+    const totalPrice = updatedPrice * itemsCount
 
       return (
         <li className="cart-item">

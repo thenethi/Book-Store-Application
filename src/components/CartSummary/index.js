@@ -11,7 +11,7 @@ const CartSummary = () => (
         let newPrice=price.replace('$','');
         price=parseInt(newPrice)
         console.log(price)
-        total += eachCartItem.price * eachCartItem.itemsCount
+        total += price * eachCartItem.itemsCount
       })
 
       return (
