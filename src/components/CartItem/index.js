@@ -13,8 +13,8 @@ const CartItem = props => (
         incrementCartItemQuantity,
         decrementCartItemQuantity,
       } = value
-      const {cartItemDetails,itemsCount}=props 
-      const {title,image,price,isbn13}=cartItemDetails
+      const {cartItemDetails}=props 
+      const {title,image,price,isbn13,itemsCount}=cartItemDetails
       const onClickDecrement = () => {
         decrementCartItemQuantity(isbn13)
       }
